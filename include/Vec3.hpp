@@ -2,7 +2,7 @@
 
 #include <cmath>
 #include <iostream>
-#include "Utils.hpp"
+#include "Utils.h"
 
 class Vec3 {
 public:
