@@ -1,5 +1,12 @@
+CC	   = g++
+CFLAGS = --std=c++2a -xc++
+SOURCE = src/*.cpp
+HEADER = ./include
+TARGET = prog
+ENTRY  = main.cpp
+
 all:
-	g++ --std=c++2a src/*.cpp -o prog -I./include
+	$(CC) $(CFLAGS) $(ENTRY) $(SOURCE) -o $(TARGET) -I$(HEADER)
 
 run:
-	@./prog
+	@./$(TARGET)
