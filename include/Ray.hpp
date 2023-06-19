@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Vec3.hpp"
-#include "Utils.h"
 
 using Point3 = Vec3;
 

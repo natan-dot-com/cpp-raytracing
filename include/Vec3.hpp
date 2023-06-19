@@ -2,7 +2,10 @@
 
 #include <cmath>
 #include <iostream>
-#include "Utils.h"
+#include <type_traits>
+
+template<typename T>
+concept Numeric = std::is_arithmetic<T>::value;
 
 class Vec3 {
 public:
@@ -116,6 +119,10 @@ public:
 
     inline double norm() const {
         return std::sqrt(x*x + y*y + z*z);
+    }
+
+    inline constexpr double squared_norm() const {
+        return x*x + y*y + z*z;
     }
 
     inline constexpr double dot(const Vec3& other) const {
