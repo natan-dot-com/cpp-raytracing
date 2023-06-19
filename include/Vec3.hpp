@@ -119,13 +119,13 @@ public:
     }
 
     inline constexpr double dot(const Vec3& other) const {
-        return x * other.x + y * other.y + z * other.z;
+        return x*other.x + y*other.y + z*other.z;
     }
 
     inline Vec3 cross(const Vec3& other) const {
-        return Vec3(y * other.z - z * other.y,
-                    z * other.x - x * other.z,
-                    x * other.y - y * other.x);
+        return Vec3(y*other.z - z*other.y,
+                    z*other.x - x*other.z,
+                    x*other.y - y*other.x);
     }
 
     inline Vec3 versor() const {

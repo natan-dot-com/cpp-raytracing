@@ -26,7 +26,7 @@ public:
     inline Vec3 direction() const { return _direction; };
 
     template<Numeric T>
-    inline constexpr Point3 at(const T t) const {
+    inline Point3 at(const T t) const {
         return _origin + (_direction * t);
     }
 };
