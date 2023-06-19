@@ -1,3 +1,6 @@
 *.ppm
 prog
+test
+test.cpp
+compile_flags.txt
 
